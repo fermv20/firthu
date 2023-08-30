@@ -1,23 +1,22 @@
 {
   "name": "@firthu/utils",
   "version": "1.0.0",
-  "description": "",
+  "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "sideEffects": false,
-  "license": "MIT",
   "files": [
     "dist/**"
   ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts"
   },
   "devDependencies": {
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
